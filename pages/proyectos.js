@@ -83,12 +83,12 @@ function Directorio() {
     const [deliveryFilter, setDeliveryFilter] = useState([
         {
             selected: true,
-            name: 'Sí',
+            name: 'Sim',
             id: 0
         },
         {
             selected: true,
-            name: 'No',
+            name: 'Nâo',
             id: 1
         }
     ]);
@@ -111,18 +111,18 @@ function Directorio() {
     return (
         <Layout>
             <Head>
-                <title>MEX VS COVID-19 - Conoce los proyectos que fueron afectados por el COVID-19 y cómo apoyarlos</title>
+                <title>Butantem - Conheça e ajude comerciantes que foram afetados pelo COVID-19 e apoie o comércio local</title>
                 <meta
                     key="description"
                     name="description"
-                    content="Tods los proyectos de la plataforma MEX vs COVID-19 que buscan apoyar a diferentes negocios mexicanos que han sido afectados por la pandemia del COVID-19."
+                    content="Apoio ao comércio do Butantã."
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className="bg-covid-100">
                 <div className="container mx-auto ">
                     <div>
-                        <h2 className="text-2xl lg:text-3xl text-gray-900 leading-normal p-2 lg:p-10 text-center font-serif">Directorio de proyectos</h2>
+                        <h2 className="text-2xl lg:text-3xl text-gray-900 leading-normal p-2 lg:p-10 text-center font-serif">Comércio do Butantã</h2>
                     </div>
                     <TopSort numberOfListings={numberOfListings} />
                     <DirectoryList projects={projects.sort((a, b) => a.id - b.id)} categories={categories} pagination={pagination} setPagination={setPagination} numberOfPages={numberOfPages} categoryFilter={categoryFilter} setCategoryFilter={setCategoryFilter} deliveryFilter={deliveryFilter} setDeliveryFilter={setDeliveryFilter} />

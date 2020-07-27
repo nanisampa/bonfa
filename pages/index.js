@@ -22,11 +22,11 @@ function Home() {
   return (
     <Layout>
       <Head>
-        <title>MEX VS COVID-19 - Apoya a empresas o proyectos mexicanos afectados por el COVID-19</title>
+        <title>Butantem - Apoia a empresas e comércio do Butantã afetados pelo COVID-19</title>
         <meta
           key="description"
           name="description"
-          content="MEX vs COVID-19 es una plataforma para apoyar a diferentes negocios mexicanos que han sido afectados por la pandemia del COVID-19."
+          content="BUTANTEM Apoio ao comércuio do Butantã"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
