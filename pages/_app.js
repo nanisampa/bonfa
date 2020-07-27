@@ -14,10 +14,10 @@ class MyApp extends App {
     };
     componentDidMount = () => {
         const sheetsUrls = [
-            'https://docs.google.com/spreadsheets/d/1eXwDV5PGImTNXOPcfkXKlPADJezEuSotNk8EkrkO2c4/pub?output=csv', //Proyectos
-            'https://docs.google.com/spreadsheets/d/1eXwDV5PGImTNXOPcfkXKlPADJezEuSotNk8EkrkO2c4/pub?output=csv&gid=1075638913', //Categorías
-            'https://docs.google.com/spreadsheets/d/1eXwDV5PGImTNXOPcfkXKlPADJezEuSotNk8EkrkO2c4/pub?output=csv&gid=1040079816', //Eventos
-            'https://docs.google.com/spreadsheets/d/1eXwDV5PGImTNXOPcfkXKlPADJezEuSotNk8EkrkO2c4/pub?output=csv&gid=1701026177', //Asesorías
+            'https://docs.google.com/spreadsheets/d/e/2PACX-1vRVy_9Pev38xKIeOyuYZBHffBXp1r9020LvBbbJzSzIB8rSIyofkMBHMg48l_et0g/pub?output=csv', //Proyectos
+            'https://docs.google.com/spreadsheets/d/e/2PACX-1vRVy_9Pev38xKIeOyuYZBHffBXp1r9020LvBbbJzSzIB8rSIyofkMBHMg48l_et0g/pub?output=csv&gid=172500331', //Categorías
+            'https://docs.google.com/spreadsheets/d/e/2PACX-1vRVy_9Pev38xKIeOyuYZBHffBXp1r9020LvBbbJzSzIB8rSIyofkMBHMg48l_et0g/pub?output=csv&gid=1481253720', //Eventos
+            'https://docs.google.com/spreadsheets/d/e/2PACX-1vRVy_9Pev38xKIeOyuYZBHffBXp1r9020LvBbbJzSzIB8rSIyofkMBHMg48l_et0g/pub?output=csv&gid=1766680535', //Asesorías
         ]
         var that = this;
         Promise.all(
