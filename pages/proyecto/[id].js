@@ -32,11 +32,11 @@ const Proyecto = () => {
     return (
         <Layout>
             <Head>
-                <title>Butantem - Apoia  {project.nombre} durante a epidemia do COVID-19</title>
+                <title>MEX VS COVID-19 - Apoya a {project ? project.nombre : null} durante la epidemia del COVID-19</title>
                 <meta
                     key="description"
                     name="description"
-                    content={`Conoce toda la información de ${project.nombre} e apoiamos através do Butantem. Uma plataforma que oferece ajuda para negócios afetados pela pandemia do COVID-19.`}
+                    content={`Conoce toda la información de ${project ? project.nombre : null} y apóyalos a través de Mex VS COVID-19. Una plataforma que ofrece ayuda para negocios afectados por la pandemia del COVID-19.`}
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
@@ -84,15 +84,15 @@ const Proyecto = () => {
                                 </div>
                                 <ShadowBox width={'lg:w-2/3 w-full'}>
                                     <div className="flex flex-col ">
-                                        <p className="font-bold text-lg text-gray-900">Descrição do Comércio:</p>
+                                        <p className="font-bold text-lg text-gray-900">Descripción del proyecto:</p>
                                         <p className="text-gray-700 text-lg text-sm">{project.descripcion}</p>
                                     </div>
                                 </ShadowBox>
                                 {project.servicio_a_domicilio === 'Sí' ?
                                     <ShadowBox width={'lg:w-1/3 w-full'}>
                                         <div className="flex flex-col">
-                                            <p className="font-bold text-gray-900 text-lg">Delivery: {project.servicio_a_domicilio === 'Sí' ? ' ✅' : ' ⛔'}</p>
-                                            <p className="font-bold text-gray-900 text-lg">Envia Para: <span className="text-gray-700 font-normal">{project.zonas_servicio_a_domicilio}</span></p>
+                                            <p className="font-bold text-gray-900 text-lg">Servicio a domiclio: {project.servicio_a_domicilio === 'Sí' ? ' ✅' : ' ⛔'}</p>
+                                            <p className="font-bold text-gray-900 text-lg">Zonas de envío: <span className="text-gray-700 font-normal">{project.zonas_servicio_a_domicilio}</span></p>
                                         </div>
                                     </ShadowBox> : null}
                                 {project.impacto_social ? <ShadowBox width={'w-full'}>
@@ -103,7 +103,7 @@ const Proyecto = () => {
                                 </ShadowBox> : null}
                             </div>
                                 :
-                                <p>Carregando...</p>
+                                <p>Cargando...</p>
                         }
                         <RandomProjects projects={projects} />
                     </div>
