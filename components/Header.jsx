@@ -11,7 +11,7 @@ function Header() {
                 <div className="flex items-center flex-shrink-0 text-white mr-6">
                     <Link href="/">
                         <a>
-                            <img src="/images/logo.svg" className="h-6 lg:h-12" alt="Logo Mex vs COVID-19"></img>
+                            <img src="/images/logo.svg" className="h-6 lg:h-12" alt="Logo BUTANTEM"></img>
                         </a>
                     </Link>
                 </div>
@@ -24,12 +24,12 @@ function Header() {
                     <div className="text-sm lg:flex-grow">
                         <ActiveLink activeClassName="underline" href="/">
                             <a aria-label="Página de inicio" alt="Página de inicio" className="text-covid-100 block text-lg mt-4 lg:inline-block lg:mt-0  hover:text-covid-900 hover:underline mr-4 font-serif ">
-                                Inicio
+                                Home
       </a>
                         </ActiveLink>
                         <ActiveLink activeClassName="underline" href="/proyectos">
                             <a className="text-covid-100 block text-lg mt-4 lg:inline-block lg:mt-0 hover:text-covid-900 hover:underline mr-4 font-serif">
-                                Proyectos
+                                Projetos
       </a>
                         </ActiveLink >
                         <ActiveLink activeClassName="underline" href="/eventos">
@@ -39,17 +39,17 @@ function Header() {
                         </ActiveLink >
                         <ActiveLink activeClassName="underline" href="/asesorias">
                             <a className="text-covid-100 block text-lg mt-4 lg:inline-block lg:mt-0 hover:text-covid-900 hover:underline mr-4 font-serif">
-                                Asesorías
+                                Assessoria
       </a>
                         </ActiveLink >
                         <ActiveLink activeClassName="underline" href="/quienes-somos">
                             <a className="text-covid-100 block text-lg mt-4 lg:inline-block lg:mt-0 hover:text-covid-900 hover:underline font-serif">
-                                ¿Quiénes somos?
+                                Quem Somos
       </a>
                         </ActiveLink>
                     </div>
                     <div>
-                        <a href="mailto:mexvscovid19@gmail.com" className="inline-block text-lg px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-covid-500 hover:bg-white mt-4 lg:mt-0 font-serif">+ Agrega tu proyecto</a>
+                        <a href="mailto:butantem@gmail.com" className="inline-block text-lg px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-covid-500 hover:bg-white mt-4 lg:mt-0 font-serif">+ Adicione seu comércio</a>
                     </div>
                 </div>
             </nav>

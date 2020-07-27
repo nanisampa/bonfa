@@ -3,7 +3,7 @@ moment.locale('es');
 
 function EventsItem({ event, past }) {
     const { titulo, imagen, presentado_por, time, link } = event;
-    let buttonText = 'Unirme'
+    let buttonText = 'Participar'
     if (past) {
         buttonText = 'Ver'
     }
