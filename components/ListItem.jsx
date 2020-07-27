@@ -43,9 +43,9 @@ function ListItem({ project }) {
                         <a><h4 className="text-2xl text-gray-700 font-bold mb-2 hover:underline font-serif">{project.nombre}</h4></a>
                     </Link>
                     <ContactInfo project={project} />
-                    <p className="text-gray-800 py-1 "><span className="font-medium text-gray-800">Servicio a domicilio: </span> {project.servicio_a_domicilio === 'Sí' ? ' ✅' : ' ⛔'}</p>
-                    <p className="text-gray-800 py-1 box clamp-3 lg:clamp-2 orient-vertical overflow-hidden"><span className="font-medium text-gray-800">Zonas de envío: </span> {project.zonas_servicio_a_domicilio}</p>
-                    <p className="text-gray-800 py-1 box clamp-4 lg:clamp-2 orient-vertical overflow-hidden"><span className="font-medium text-gray-800">Descripción: </span>{project.descripcion}</p>
+                    <p className="text-gray-800 py-1 "><span className="font-medium text-gray-800">Delivery: </span> {project.servicio_a_domicilio === 'Sim' ? ' ✅' : ' ⛔'}</p>
+                    <p className="text-gray-800 py-1 box clamp-3 lg:clamp-2 orient-vertical overflow-hidden"><span className="font-medium text-gray-800">Envia Para: </span> {project.zonas_servicio_a_domicilio}</p>
+                    <p className="text-gray-800 py-1 box clamp-4 lg:clamp-2 orient-vertical overflow-hidden"><span className="font-medium text-gray-800">Descrição: </span>{project.descripcion}</p>
                 </div>
                 <MoreInfo project={project} />
             </div>
