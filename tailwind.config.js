@@ -9,13 +9,13 @@ module.exports = {
       },
       colors: {
         covid: {
-          100: '#D9D9D9',
-          200: '#F9CF00',
+          100: '#f6f5f0',
+          200: '#efd9c8',
           300: '#a3a686',
           400: '#efd9c8',
-          500: '#4484CE',
-          600: '#F19F4D',
-          900: '#F5F5F5'
+          500: '#af694e',
+          600: '#89644d',
+          900: '#363232'
         }
       },
     },
@@ -29,3 +29,4 @@ module.exports = {
     require('@tailwindcss/custom-forms')
   ],
 }
+
